@@ -1,3 +1,4 @@
+
 #el compilado vuelve tu codigo a unos y ceros
 #el lenguaje interpretado es multiplataforma
 """
@@ -28,7 +29,7 @@ listas => son arrays => agergar valores ,cambiar valores, eliminar,buscar
 tuplas => son arrays no editables
 Diccionario => 
 
-"""
+
 #colecciones 
 l1=[1,3,4,5,5,6]
 print type (l1)
@@ -47,15 +48,16 @@ l1.append("emprende up")
 l1.append([4,5,12,"hola",True,156,False])
 print l1[8][3]
 
-"""tuplas no editables"""
-t=(1,3,4)
+""" """tuplas no editables"""
+
+#t=(1,3,4)
 #t[2]=10
-print t
+#print t
 """lista si se puede editar """
-empleados =[(1,"juan"),(2,"daniel"),(3,"gabriela")]
-empleados.append((4,"paola"))
-print type(empleados)
-print type (empleados[1])
+#empleados =[(1,"juan"),(2,"daniel"),(3,"gabriela")]
+#empleados.append((4,"paola"))
+#print type(empleados)
+#print type (empleados[1])
 ##append es para agregar datos dentro de la colecciones
 
 #dicionarios
@@ -67,7 +69,7 @@ print type (empleados[1])
 """ dic ={} o dic=dic()
 list=[] o list =list()
 tuple=()   sin embaargo para las tuplas no tiene sentido hacer eso """
-
+"""
 Dic1={"msg1":"mensaje1","msg2":"mensaje2","msg3":"mensaje3"}
 print Dic1
 print type(Dic1)
@@ -114,7 +116,7 @@ if a>b:
 else :
 	print "a es menor o igual que b"
 print "fin"
-"""
+
 = asignnacion 
 == comparacion 
 != diferente
@@ -188,9 +190,49 @@ for deportista in deportistas:
 		else:
 				deportista["apto"]= False		 		
 		 		print"deportista no apto"
-"""
+
 X =[1,2,3,4,5]
 X = [x**2 for x in X]
 
 print X
+
+
+
+librerias :
+numphy => 
+pandas=> parecido a sql
+scikit-learn => estadistica,ia,ml es mas "cientifico"
+matplotlib => graficos
+"""
+"""
+"""
+#funciones
+
+def concatenar (palabra1,palabra2,palabra3,palabra4):
+	resultado = palabra1+""+palabra2+""+palabra3+""+palabra4
+	return resultado
+print concatenar("uno","dos","tres","cuatro")
+print concatenar(palabra4="cuatro",palabra3="tres",palabra1= "uno",palabra2="dos")
+print concatenar("uno","dos",palabra4="cuatro",palabra3="tres")
+
+def concatenar2(*args):
+	print args 
+	resultado=""
+	for arg in args:
+		resultado = resultado + arg
+	return resultado
+
+print concatenar2("a","b","c","d","e","fin") 
+#poniendo 2 asterisco obtienes un diccionario
+def concatenar3(**args):
+	print args 
+	return args["nombre"]+""+args["apellido"]+""+args["dni"]
+print concatenar3(
+	nombre ="daniel",
+	apellido="mor",
+	dni="1243536",
+	edad="45",
+	email="asdf")
+
+
 
